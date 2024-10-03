@@ -32,17 +32,17 @@ export default function Input() {
     }
   }, [errors.question]);
   return (
-    <div className="mt-3 sm:ml-28 relative">
+    <div className="mt-3 sm:ml-28 sm:relative fixed  bottom-0 left-0">
       <form onSubmit={handleSubmit(onSubmit)}>
         <label className="">
         <input
         {...register("question", { required: true })}
           type="text"
           placeholder="Enter a prompt here..."
-          className="input bg-white-500 hover:bg-slate-100 border-slate-300 overflow-x-scroll border-1 sm:w-full focus:border-none w-[375px] h-20 sm:h-12 max-w-screen-lg"
+          className="input bg-white-500 hover:bg-slate-100 border-slate-300 overflow-x-scroll border-1 sm:w-full focus:border-none w-[350px] h-20 sm:h-12 max-w-screen-lg"
         />
          
-        <button className="absolute sm:right-20 right-0 top-1/2 -translate-y-1/2 bg-white hover:bg-white text-white font-bold py-1 px-2 rounded">
+        <button className="absolute sm:right-20 -right-14  top-1/2 -translate-y-1/2 bg-white hover:bg-white text-white font-bold py-1 px-2 rounded">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWmddFY6ErGAUSNxDENnjtT9tmrq8R0J9SdQ&s"
             className="w-10"

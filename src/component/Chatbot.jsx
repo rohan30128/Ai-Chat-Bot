@@ -11,7 +11,7 @@ export default function Chatbot() {
   }, [question]);
 
   return (
-    <div className="mt-5 sm:h-[430px] h-[740px] overflow-y-scroll">
+    <div className="mt-5 sm:h-[430px] h-auto overflow-y-scroll">
       {question.length == 0 ? <div className="sm:w-2/3 w-full mx-auto">
         <h1 className="sm:text-8xl text-5xl  text-cyan-400">Hello,Dear</h1>
         <h1 className="sm:text-8xl text-5xl text-slate-300 mt-10">How can I help you today?</h1>

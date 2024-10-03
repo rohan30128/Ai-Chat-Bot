@@ -5,7 +5,7 @@ import Logo from "../../public/Logo.png"
 export default function Navbar() {
   return (
     <div>
-      <div className="navbar bg-neutral text-neutral-content">
+      <div className="navbar z-10 bg-neutral text-neutral-content fixed top-0 left-0 w-full">
         <div className="navbar-start">
           <Link to="/" className="btn btn-ghost text-xl">Ai Chat-Bot</Link>
         </div>
